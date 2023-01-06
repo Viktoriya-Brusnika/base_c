@@ -5,10 +5,9 @@
 // 78 -> третьей цифры нет
 // 32679 -> 6
 
-int x = new Random().Next(100,1000);
 
-Console.WriteLine(x);
-int x1 = x/100;
-int x3 = x %10;
+Console.WriteLine("Введите число");
+int a = Convert.ToInt32 (Console.ReadLine());
 
-Console.WriteLine($"{x1}{x3}");
+if (a<100) Console.WriteLine("третьей цифры нет");
+else if (a<1000) Console.WriteLine(a %10);
